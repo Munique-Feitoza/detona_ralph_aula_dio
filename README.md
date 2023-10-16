@@ -1,1 +1,3 @@
-# detona_ralph_aula_dio
+# detona ralph aula dio
+
+Projeto de criação do jogo Detona Ralph
