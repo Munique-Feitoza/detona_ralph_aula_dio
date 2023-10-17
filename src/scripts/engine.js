@@ -36,14 +36,14 @@ function countDown() {
     state.view.squares.forEach((square) => {
       square.classList.remove("enemy");
     });
-    if (state.values.livesExist > 0) {
+    if (state.values.livesExist >= 0) {
       state.values.countDownTimerId = setInterval(countDown, 1000);
       start();
       state.view.lives.textContent = `x${state.values.livesExist--}`;
     } else {
       alert(`O jogo acabou, mais sorte na próxima vez, você fez ${state.values.scoreFinal} pontos`);
       state.values.scoreFinal = 0;
-      state.values.livesExist = 2;
+      state.values.livesExist = 3;
       state.view.lives.textContent = `x${state.values.livesExist}`;
       reset();
     }
